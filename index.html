@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Term 2 past papers  </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <main>
+    <header class="header">
+      <a href="index.html" class="logo"> CBU SOM </a>
+
+  
+      <h2> Totoz Brainy Basecamp ! </h2>
+
+
+    </header>
+
+    <div class="container">
+      <img src="toto.jpg">
+      <div class="words">
+        <p class="intro"> WELCOME TO TOTOZ BASECAMP, IMPRESSIVE RIGHT !!</p>
+      </div>
+      <h1> Topics in these test are according to what was covered in that particular year, so the topics you have covered this year might not be in these papers. Try other terms. you might be ahead or behind</h1>
+
+      <article class="choose">
+        <button class="btn1" onclick="toggleTerms('path-terms')"> Pathology </button>
+        <div id="path-terms" class="terms" style="display: none;">
+          <a href="term1-notes.html"> 2023</a>
+          <a href="term2-notes.html"> 2022</a>
+          <a href="term3-notes.html"> 2020</a>
+          <a href="term1-notes.html"> 2019</a>
+          <a href="term2-notes.html"> 2018</a>
+          <a href="term3-notes.html"> 2017</a>
+          <a href="term1-notes.html"> 2016</a>
+          <a href="term2-notes.html"> 2015</a>
+        </div>
+      </article>
+
+      <article class="choose">
+        <button class="btn1" onclick="toggleTerms('notes-terms')"> Physiology </button>
+        <div id="notes-terms" class="terms" style="display: none;">
+          <a href="term1-notes.html"> Term 1</a><br>
+          <a href="term2-notes.html"> Term 2</a><br>
+          <a href="term3-notes.html"> Term 3</a>
+        </div>
+      </article>
+
+      <article class="choose">
+        <button class="btn1" onclick="toggleTerms('quiz-terms')"> Anatomy </button>
+        <div id="quiz-terms" class="terms" style="display: none;">
+          <a href="term1-quiz.html"> Term 1</a><br>
+          <a href="term2-quiz.html"> Term 2</a><br>
+          <a href="term3-quiz.html"> Term 3</a>
+        </div>
+      </article>
+
+      <article class="choose">
+        <button class="btn1" onclick="toggleTerms('papers-terms')"> Therapeutics </button>
+        <div id="papers-terms" class="terms" style="display: none;">
+          <a href="term1-pp.html"> Term 1</a><br>
+          <a href="term2-pp.html"> Term 2</a><br>
+          <a href="term3-pp.html"> Term 3</a>
+        </div>
+      </article>
+
+      
+    </div>
+
+    <div class="footer">
+      <h1> ToTo </h1>
+    </div>
+   
+  </main>
+
+  <script>
+    function toggleTerms(id) {
+      const element = document.getElementById(id);
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
+
+
+
+</body>
+</html>
